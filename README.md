@@ -15,8 +15,6 @@ Users should be able to:
 
 ## Giving feedback
 
-Feedback is always welcome, so if you have any to give on this challenge please email hi[at]frontendmentor[dot]io.
-
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
+Feedback is always welcome, so if you have any to give on this challenge please do 🙏.
 
 
