@@ -1,0 +1,34 @@
+.enter__message {
+  width: 92%;
+  background-color: $white;
+  border-radius: 30px;
+  margin: auto;
+  overflow: hidden;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  input {
+    outline: none;
+    border: none;
+    padding: 20px;
+    font-size: 12px;
+    &::placeholder {
+      color: $grayish-blue;
+    }
+  }
+  .send__button {
+    height: 26px;
+    width: 26px;
+    background-color: $very-dark-desaturated-violet;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .chevron__right {
+      i {
+        color: $white;
+      }
+    }
+  }
+}

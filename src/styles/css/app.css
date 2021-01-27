@@ -161,6 +161,67 @@ header .user .user__info .user__personal__info .status {
           box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
 }
 
+.enter__message {
+  width: 92%;
+  background-color: white;
+  border-radius: 30px;
+  margin: auto;
+  overflow: hidden;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.enter__message input {
+  outline: none;
+  border: none;
+  padding: 20px;
+  font-size: 12px;
+}
+
+.enter__message input::-webkit-input-placeholder {
+  color: #c6cacd;
+}
+
+.enter__message input:-ms-input-placeholder {
+  color: #c6cacd;
+}
+
+.enter__message input::-ms-input-placeholder {
+  color: #c6cacd;
+}
+
+.enter__message input::placeholder {
+  color: #c6cacd;
+}
+
+.enter__message .send__button {
+  height: 26px;
+  width: 26px;
+  background-color: #3e2753;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.enter__message .send__button .chevron__right i {
+  color: white;
+}
+
 .pricing__message {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -200,6 +261,10 @@ header .user .user__info .user__personal__info .status {
   font-weight: 500;
 }
 
+.expensive {
+  margin-bottom: 10px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -211,7 +276,8 @@ header .user .user__info .user__personal__info .status {
   overflow: hidden;
   margin: auto;
   width: 100%;
-  min-height: 100vh;
+  min-height: 120vh;
+  height: 100%;
   font-size: 16px;
   font-family: 'Rubik', sans-serif;
   background-color: #f5f3f7;
