@@ -1,0 +1,15 @@
+.booking {
+  float: right;
+  width: 45%;
+  margin-top: 150px;
+  h1 {
+    font-size: 40px;
+    font-weight: 500;
+    color: $very-dark-desaturated-violet;
+    margin: 30px auto;
+  }
+  p {
+    color: $dark-grayish-blue;
+    line-height: 1.7;
+  }
+}

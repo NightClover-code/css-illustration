@@ -265,6 +265,24 @@ header .user .user__info .user__personal__info .status {
   margin-bottom: 10px;
 }
 
+.booking {
+  float: right;
+  width: 45%;
+  margin-top: 150px;
+}
+
+.booking h1 {
+  font-size: 40px;
+  font-weight: 500;
+  color: #3e2753;
+  margin: 30px auto;
+}
+
+.booking p {
+  color: #a39daa;
+  line-height: 1.7;
+}
+
 * {
   margin: 0;
   padding: 0;
