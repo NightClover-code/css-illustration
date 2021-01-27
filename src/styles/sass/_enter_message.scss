@@ -2,7 +2,7 @@
   width: 92%;
   background-color: $white;
   border-radius: 30px;
-  margin: auto;
+  margin: auto auto 10px auto;
   overflow: hidden;
   height: 30px;
   display: flex;
@@ -11,6 +11,7 @@
   input {
     outline: none;
     border: none;
+    max-width: 200px;
     padding: 20px;
     font-size: 12px;
     &::placeholder {

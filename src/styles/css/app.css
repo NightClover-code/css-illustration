@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
 .phone {
-  position: absolute;
+  position: relative;
   z-index: 10;
   height: 100%;
   min-height: 500px;
@@ -12,6 +12,12 @@
   padding: 10px;
   -webkit-box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 700px) {
+  .phone {
+    margin-left: 0px;
+  }
 }
 
 .phone .phone__container {
@@ -165,7 +171,7 @@ header .user .user__info .user__personal__info .status {
   width: 92%;
   background-color: white;
   border-radius: 30px;
-  margin: auto;
+  margin: auto auto 10px auto;
   overflow: hidden;
   height: 30px;
   display: -webkit-box;
@@ -182,6 +188,7 @@ header .user .user__info .user__personal__info .status {
 .enter__message input {
   outline: none;
   border: none;
+  max-width: 200px;
   padding: 20px;
   font-size: 12px;
 }
@@ -266,9 +273,15 @@ header .user .user__info .user__personal__info .status {
 }
 
 .booking {
-  float: right;
-  width: 45%;
-  margin-top: 150px;
+  margin-left: 100px;
+}
+
+@media screen and (max-width: 700px) {
+  .booking {
+    margin-left: 0px;
+    margin-bottom: 50px;
+    width: 80%;
+  }
 }
 
 .booking h1 {
@@ -310,19 +323,53 @@ header .user .user__info .user__personal__info .status {
   height: 95vh;
   border-bottom-right-radius: 1000px;
   border-bottom-left-radius: 1000px;
-  z-index: 2;
+  z-index: 0;
+}
+
+@media screen and (max-width: 700px) {
+  .app__container .background {
+    height: 80vh;
+  }
 }
 
 .app__container .wrapper {
-  max-width: 900px;
-  min-width: 280px;
-  margin: auto;
-  width: 80%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  max-width: 900px;
+  min-width: 250px;
+  margin: auto;
+  width: 80%;
+}
+
+@media screen and (max-width: 700px) {
+  .app__container .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.attribution {
+  text-align: center;
+  font-family: inherit;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 700px) {
+  .attribution {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 }
 /*# sourceMappingURL=app.css.map */

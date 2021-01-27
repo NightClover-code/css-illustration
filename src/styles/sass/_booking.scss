@@ -1,7 +1,10 @@
 .booking {
-  float: right;
-  width: 45%;
-  margin-top: 150px;
+  margin-left: 100px;
+  @media screen and (max-width: 700px) {
+    margin-left: 0px;
+    margin-bottom: 50px;
+    width: 80%;
+  }
   h1 {
     font-size: 40px;
     font-weight: 500;
