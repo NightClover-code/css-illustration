@@ -1,0 +1,46 @@
+header {
+  background: linear-gradient(
+    to right,
+    $moderate-violet,
+    $light-magenta
+  );
+  border-radius: 8px;
+  width: 100%;
+  color: $white;
+  .user {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 20px 20px 20px;
+    .user__info {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .avatar {
+        background-color: $white;
+        padding: 1px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        margin: 0 10px;
+        img {
+          width: 25px;
+          border-radius: 50%;
+        }
+      }
+      .user__personal__info {
+        display: flex;
+        flex-flow: column nowrap;
+        .username {
+          font-weight: 500;
+        }
+        .status {
+          color: $pale-violet;
+          line-height: 1.7;
+          font-size: 11px;
+        }
+      }
+    }
+  }
+}
