@@ -2,9 +2,10 @@
 .phone {
   position: absolute;
   z-index: 10;
-  height: 550px;
-  width: 300px;
-  margin-top: 90px;
+  height: 100%;
+  min-height: 500px;
+  max-width: 300px;
+  margin-top: 40px;
   border-radius: 30px;
   margin-left: 100px;
   background-color: white;
@@ -117,14 +118,86 @@ header .user .user__info .user__personal__info .status {
 }
 
 .samuel__message {
+  float: left;
   background: #ede5f3;
-  margin: 10px;
-  border-radius: 10px;
+  margin: 10px 10px 0px 10px;
+  border-radius: 12px;
   font-size: 11px;
   padding: 10px;
   border-bottom-left-radius: 5px;
-  width: 65%;
+  max-width: 55%;
   color: #9241c8;
+}
+
+.client__dog__pictures__message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: right;
+  margin: 10px;
+}
+
+.client__dog__pictures__message .dog__picture {
+  width: 50px;
+  margin: 5px;
+}
+
+.client__dog__pictures__message .dog__picture img {
+  border-radius: 15px;
+  width: 100%;
+}
+
+.client__message {
+  float: right;
+  background: white;
+  margin: 0px 10px 10px 10px;
+  border-radius: 12px;
+  font-size: 11px;
+  padding: 10px;
+  border-bottom-right-radius: 5px;
+  max-width: 55%;
+  color: #6e5d7e;
+  -webkit-box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.pricing__message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: -webkit-gradient(linear, right top, left top, color-stop(35%, #9241c8), to(#e942ff));
+  background: linear-gradient(to left, #9241c8 35%, #e942ff);
+  margin: 10px 10px 0px 10px;
+  border-radius: 12px;
+  font-size: 11px;
+  padding: 10px;
+  border-bottom-left-radius: 5px;
+  min-width: 70%;
+  color: white;
+}
+
+.pricing__message .check__circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 1px solid #e570ff;
+}
+
+.pricing__message .service {
+  color: #ede5f3;
+  margin-right: 40px;
+}
+
+.pricing__message .price {
+  font-size: 16px;
+  font-weight: 500;
 }
 
 * {

@@ -1,0 +1,25 @@
+.client__dog__pictures__message {
+  display: flex;
+  float: right;
+  margin: 10px;
+  .dog__picture {
+    width: 50px;
+    margin: 5px;
+    img {
+      border-radius: 15px;
+      width: 100%;
+    }
+  }
+}
+.client__message {
+  float: right;
+  background: $white;
+  margin: 0px 10px 10px 10px;
+  border-radius: 12px;
+  font-size: 11px;
+  padding: 10px;
+  border-bottom-right-radius: 5px;
+  max-width: 55%;
+  color: $desaturated-dark-violet;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+}
