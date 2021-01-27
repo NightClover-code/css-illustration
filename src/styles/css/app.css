@@ -9,6 +9,8 @@
   margin-left: 100px;
   background-color: white;
   padding: 10px;
+  -webkit-box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.2);
 }
 
 .phone .phone__container {
@@ -39,11 +41,13 @@
 }
 
 header {
-  background: -webkit-gradient(linear, left top, right top, from(#9241c8), to(#e942ff));
-  background: linear-gradient(to right, #9241c8, #e942ff);
+  background: -webkit-gradient(linear, left top, right top, color-stop(35%, #9241c8), to(#e942ff));
+  background: linear-gradient(to right, #9241c8 35%, #e942ff);
   border-radius: 8px;
   width: 100%;
   color: white;
+  -webkit-box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
 }
 
 header .user {
@@ -56,7 +60,7 @@ header .user {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 40px 20px 20px 20px;
+  padding: 40px 20px 15px 20px;
 }
 
 header .user .user__info {
@@ -110,6 +114,17 @@ header .user .user__info .user__personal__info .status {
   color: #d89eff;
   line-height: 1.7;
   font-size: 11px;
+}
+
+.samuel__message {
+  background: #ede5f3;
+  margin: 10px;
+  border-radius: 10px;
+  font-size: 11px;
+  padding: 10px;
+  border-bottom-left-radius: 5px;
+  width: 65%;
+  color: #9241c8;
 }
 
 * {

@@ -2,6 +2,7 @@
 @import './variables';
 @import './phone';
 @import './header';
+@import './samuel_message';
 * {
   margin: 0;
   padding: 0;
@@ -27,7 +28,6 @@
     z-index: 2;
   }
   .wrapper {
-    // display: flex;
     max-width: 900px;
     min-width: 280px;
     margin: auto;
